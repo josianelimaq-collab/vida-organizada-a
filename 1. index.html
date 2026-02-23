@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vida Organizada AI</title>
+
+<link rel="manifest" href="manifest.json">
+
+<style>
+body{
+font-family:Arial;
+background:#f6f7fb;
+text-align:center;
+padding:40px;
+}
+.card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+<h1>🌿 Vida Organizada AI</h1>
+<p>Seu assistente familiar inteligente</p>
+
+<button onclick="alert('Assistente ativo 💛')">
+Conversar com Assistente
+</button>
+</div>
+
+<script>
+if("serviceWorker" in navigator){
+navigator.serviceWorker.register("sw.js");
+}
+</script>
+
+</body>
+</html>
